@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スキルチェックフォーム</title>
+</head>
+<body>
+    <h2>スキルチェックフォーム</h2>
+    <form action="skill_check_process.php" method="POST">
+        
+        <h3>基本的なスキル</h3>
+        <label>読み書き（日本語）:</label>
+        <select name="reading_writing">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>読み書き（外国語）:</label>
+        <select name="reading_writing2">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+        
+        <label>コミュニケーション:</label>
+        <select name="communication">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>ヒアリング:</label>
+        <select name="hearing">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>論理的思考:</label>
+        <select name="logical_thinking">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>ITスキル（表計算、プレゼンテーション作成）:</label>
+        <select name="it_skill">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>データ収集・分析:</label>
+        <select name="data_skill">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <h3>専門的なスキル（保有資格）</h3>
+        <h4>1、医療・福祉</h4>
+        <label><input type="checkbox" name="qualifications[]" value="医師">医師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="歯科医師">歯科医師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="薬剤師">薬剤師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="看護師">看護師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="理学療法士">理学療法士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="作業療法士">作業療法士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="臨床検査技師">臨床検査技師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="放射線技師">放射線技師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="管理栄養士">管理栄養士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="社会福祉士">社会福祉士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="介護福祉士">介護福祉士</label><br><br>
+        
+        <h4>2、法律・公務</h4>
+        <label><input type="checkbox" name="qualifications[]" value="司法書士">司法書士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="行政書士">行政書士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="弁護士">弁護士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="公認会計士">公認会計士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="税理士">税理士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="社会保険労務士">社会保険労務士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="不動産鑑定士">不動産鑑定士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="宅地建物取引士">宅地建物取引士</label><br><br>
+        
+        <h4>3、建築・土木</h4>
+        <label><input type="checkbox" name="qualifications[]" value="一級建築士">一級建築士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="二級建築士">二級建築士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="施工管理技士（1級、2級）">施工管理技士（1級、2級）</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="土木施工管理技士">土木施工管理技士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="電気工事士（第一種、第二種）">電気工事士（第一種、第二種）</label><br><br>
+        
+        <h4>4、情報処理・IT</h4>
+        <label><input type="checkbox" name="qualifications[]" value="ITパスポート">ITパスポート</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="基本情報技術者">基本情報技術者</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="応用情報技術者">応用情報技術者</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="情報セキュリティマネジメント">情報セキュリティマネジメント</label><br><br>
+        
+        <h4>5、教育・心理</h4>
+        <label><input type="checkbox" name="qualifications[]" value="教員免許（小学校、中学校、高等学校）">教員免許（小学校、中学校、高等学校）</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="臨床心理士">臨床心理士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="保育士">保育士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="公認心理師">公認心理師</label><br><br>
+        
+        <h4>6、金融・保険</h4>
+        <label><input type="checkbox" name="qualifications[]" value="ファイナンシャルプランナー（FP）">ファイナンシャルプランナー（FP）</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="証券外務員">証券外務員</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="保険代理店登録">保険代理店登録</label><br><br>
+        
+        <h4>7、製造・技術</h4>
+        <label><input type="checkbox" name="qualifications[]" value="技術士">技術士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="電気主任技術者">電気主任技術者</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="ボイラー技士">ボイラー技士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="鉄道車両整備士">鉄道車両整備士</label><br><br>
+        
+        <h4>8、運輸・物流</h4>
+        <label><input type="checkbox" name="qualifications[]" value="海技士">海技士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="航空整備士">航空整備士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="自動車整備士">自動車整備士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="物流管理士">物流管理士</label><br><br>
+        
+        <h4>9、環境・農林水産</h4>
+        <label><input type="checkbox" name="qualifications[]" value="環境計量士">環境計量士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="獣医師">獣医師</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="林業技士">林業技士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="水産技師">水産技師</label><br><br>
+        
+        <h4>10、観光・サービス</h4>
+        <label><input type="checkbox" name="qualifications[]" value="通訳案内士">通訳案内士</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="観光プランナー">観光プランナー</label><br>
+        <label><input type="checkbox" name="qualifications[]" value="ホテルマネジメント資格">ホテルマネジメント資格</label><br><br>
+        
+        <h4>11、その他</h4>
+        <label>その他資格:</label>
+        <input type="text" name="other_qualifications" placeholder="その他の資格を入力">
+        <br><br>
+
+        <h3>生活スキル</h3>
+        <label>料理:</label>
+        <select name="cooking_skills">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>掃除:</label>
+        <select name="cleaning_skills">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>洗濯:</label>
+        <select name="laundry_skills">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>子育て:</label>
+        <select name="childcare_skills">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+        <label>介護:</label>
+        <select name="nursing_care">
+            <option value="1">1 - 苦手</option>
+            <option value="2">2 - やや苦手</option>
+            <option value="3">3 - 普通</option>
+            <option value="4">4 - やや得意</option>
+            <option value="5">5 - 得意</option>
+        </select>
+        <br><br>
+
+
+        <input type="submit" value="次へ">
+    </form>
+</body>
+</html>
